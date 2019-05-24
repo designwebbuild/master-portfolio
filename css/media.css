@@ -1,0 +1,137 @@
+/* Media Queries */
+
+@Media only screen and (max-width: 991px) {
+    .nav-li a {
+        font-size: 1.5rem;
+        margin: 0 25px;
+    }
+
+    .container-about img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+    }
+
+    .tech-stack ul {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .work {
+        width: 250px;
+        height: 240px;
+    }
+
+    .work h5 {
+        font-size: 1.1rem;
+    }
+}
+
+@Media only screen and (max-width: 700px) {
+    .nav-li a {
+        font-size: 1.1rem;
+        margin: 0 15px;
+    }
+
+
+    .name {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+
+    .social-icons {
+        position: fixed;
+    }
+
+    .social-icons li {
+        margin: 0 10px;
+        font-size: 2.5rem;
+    }
+
+    .about-text p {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .sub-title {
+        margin: 50px 0;
+    }
+
+    .tech-stack ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tech-stack .fab {
+        font-size: 5rem;
+    }
+}
+
+
+@Media only screen and (max-width: 400px) {
+    
+    .sub-title {
+        font-size: 1.5rem;
+    }
+
+    .nav-li a {
+        font-size: 0.8rem;
+        margin: 0 5px;
+    }
+
+    .logo-img img {
+        width: 100px;      
+    }
+
+    .name {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .social-icons {
+        position: fixed;
+    }
+
+    .social-icons li {
+        margin: 0;
+        font-size: 2.2rem;
+    }
+
+    .container-about img {
+        width: 100px;
+    }
+
+    .about-text p {
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+
+    .work {
+        margin-bottom: 10px;
+        height: 180px;
+    }
+
+    .work h5 {
+        font-size: 0.6rem;
+    }
+
+    .project-icons a {
+        font-size: 1.2rem;
+    }
+
+}
