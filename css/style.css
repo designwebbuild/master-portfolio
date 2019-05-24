@@ -21,9 +21,11 @@ html, body {
 */
 
 .container {
-    background-image: url("../img/color.png");
+    /* background-image: url("../img/color.png"); */
+    background-image: url("../img/color1.png");
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-size: cover;
+    background-position: center;
     max-width: 100%;
     margin: 0 auto;
     min-height: 100%;
