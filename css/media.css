@@ -1,14 +1,14 @@
 /* Media Queries */
 
-@Media only screen and (max-width: 991px) {
+@Media only screen and (max-width: 900px) {
     .nav-li a {
         font-size: 1.5rem;
-        margin: 0 25px;
+        margin: 0 30px;
     }
 
     .container-about img {
         display: block;
-        margin: 0 auto;
+        margin: 100px auto;
         width: 200px;
     }
 
@@ -17,14 +17,19 @@
     }
 
     .tech-stack ul {
-        display: block;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .tech-stack .fab {
+        font-size: 5rem;
     }
 
     .work {
         width: 250px;
-        height: 240px;
+        height: 250px;
+        margin-bottom: 20px;
     }
 
     .work h5 {
@@ -32,9 +37,9 @@
     }
 }
 
-@Media only screen and (max-width: 700px) {
+@Media only screen and (max-width: 600px) {
     .nav-li a {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         margin: 0 15px;
     }
 
@@ -55,17 +60,18 @@
 
     .social-icons li {
         margin: 0 10px;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .about-text p {
-        font-size: 0.8rem;
-        line-height: 1.5rem;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
         letter-spacing: 0.05rem;
     }
 
     .sub-title {
         margin: 50px 0;
+        font-size: 2.5rem;
     }
 
     .tech-stack ul {
@@ -74,7 +80,7 @@
     }
 
     .tech-stack .fab {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 }
 
@@ -87,11 +93,7 @@
 
     .nav-li a {
         font-size: 0.8rem;
-        margin: 0 5px;
-    }
-
-    .logo-img img {
-        width: 100px;      
+        margin: 10px 20px;
     }
 
     .name {
@@ -114,15 +116,16 @@
 
     .container-about img {
         width: 100px;
+        margin-top: 80px;
     }
 
     .about-text p {
-        font-size: 0.6rem;
-        line-height: 1rem;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
     }
 
     .work {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         height: 180px;
     }
 
@@ -130,8 +133,12 @@
         font-size: 0.6rem;
     }
 
-    .project-icons a {
-        font-size: 1.2rem;
+    .project-icons {
+        font-size: 1.1rem;
+    }
+
+    .tech-stack .fab {
+        font-size: 3rem;
     }
 
 }

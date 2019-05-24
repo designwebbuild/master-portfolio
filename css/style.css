@@ -21,10 +21,13 @@ html, body {
 */
 
 .container {
+    background-image: url("../img/color.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
     max-width: 100%;
     margin: 0 auto;
     min-height: 100%;
-    background-color: #fff;
+    background-color: #F6F7F8;
 }
 
 
@@ -47,7 +50,7 @@ html, body {
 
 .nav-li a {
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #000;
     transition: 0.1s;
@@ -55,6 +58,8 @@ html, body {
 
 .nav-li a:hover {
     border-bottom: 2px solid #00C853;
+    padding-bottom: 5px;
+    color: #FFC107;
 }
 
 /*
@@ -63,7 +68,7 @@ html, body {
 
 .social-icons {
     position: absolute;
-    bottom: 50%;
+    bottom: 45%;
 }
 
 .social-icons-ul {
@@ -145,8 +150,8 @@ html, body {
 }
 
 .container-about img {
-    width: 150px;
-    border: 2px solid #000;
+    width: 180px;
+    border: 3px solid #00C853;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
