@@ -87,6 +87,14 @@
 
 @Media only screen and (max-width: 400px) {
     
+    .name-section {
+        margin-top: 20px;
+    }
+
+    .logo-img img {
+        width: 150px;
+    }
+
     .sub-title {
         font-size: 1.5rem;
     }
@@ -125,7 +133,7 @@
     }
 
     .work {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         height: 180px;
     }
 
