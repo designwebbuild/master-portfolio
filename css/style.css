@@ -78,7 +78,7 @@ html, body {
 
 .social-icons {
     position: absolute;
-    bottom: 40%;
+    top: 40%;
 }
 
 .social-icons-ul {
