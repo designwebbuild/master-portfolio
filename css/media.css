@@ -82,6 +82,10 @@
     .tech-stack .fab {
         font-size: 4rem;
     }
+
+    .email {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -147,6 +151,10 @@
 
     .tech-stack .fab {
         font-size: 3rem;
+    }
+
+    .email {
+        font-size: 1.2rem;
     }
 
 }
