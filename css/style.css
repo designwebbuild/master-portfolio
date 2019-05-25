@@ -20,7 +20,7 @@ html, body {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 5%;
-    color: #65AF32;
+    color: #00E676;
 }
 
 /*
@@ -69,7 +69,7 @@ html, body {
 .nav-li a:hover {
     border-bottom: 2px solid #8601AE;
     padding-bottom: 5px;
-    color: #65AF32;
+    color: #00E676;
 }
 
 /*
@@ -136,7 +136,7 @@ html, body {
 
 .title span {
     font-size: 3rem;
-    color: #65AF32;
+    color: #00E676;
     font-weight: 700;
 }
 
@@ -169,7 +169,7 @@ html, body {
 }
 
 .about-text p a {
-    color: #65AF32;
+    color: #00E676;
     text-decoration: none;
 }
 
@@ -225,7 +225,7 @@ html, body {
 .work {
     width: 300px;
     height: 250px;
-    margin: 10px;
+    margin: 10px 5px 20px 5px;
     
 }
 
@@ -235,15 +235,15 @@ html, body {
 }
 
 .work h5 {
-   background-color: #F6F7F8;
+   background-color: transparent;
    color: #8601AE;
    font-size: 1.25rem;
    text-align: center;
-   padding: 5px;
+   margin-bottom: 15px;
 }
 
 .project-icons {
-   background-color: #F6F7F8;
+   background-color: transparent;
    text-align: center;
 }
 
