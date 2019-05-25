@@ -96,7 +96,8 @@
     }
 
     .logo-img img {
-        width: 150px;
+        width: 100px;
+        margin-top: 50px;
     }
 
     .sub-title {
@@ -110,7 +111,7 @@
 
     .name {
         font-size: 1.2rem;
-        font-weight: 700;
+        font-weight: 400;
     }
 
     .title {
