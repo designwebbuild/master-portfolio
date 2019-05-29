@@ -77,23 +77,26 @@ html, body {
 */
 
 .social-icons {
-    position: absolute;
-    top: 40%;
+    width: 400px;
+    margin-top: 50px;
 }
 
 .social-icons-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     list-style: none;
-    font-size: 4rem;
-    padding-left: 2px;
+    font-size: 2.5rem;
+    
 }
 
 .social-icons-li a {
-    color: #8601AE;
+    color: #000;
     text-decoration: none;
 }
 
 .social-icons-li a:hover {
-    color: #111;
+    color: #00E676;
 }
 
 /*
@@ -225,7 +228,7 @@ html, body {
 .work {
     width: 300px;
     height: 250px;
-    margin: 10px 5px 20px 5px;
+    margin: 10px 10px 20px 10px;
     
 }
 
