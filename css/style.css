@@ -20,24 +20,20 @@ html, body {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 5%;
-    color: #00E676;
+    color: #E81B27;
 }
 
 /*
 * Main container
 */
-
+/* background-image: url("../img/color1.png"); */
 .container {
-    /* background-image: url("../img/color.png"); */
-    /* background-image: url("https://www.sccpre.cat/png/big/14/146289_network-png.png"); */
-    background-image: url("../img/color1.png");
+    background-color: #B6C2D2;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
     max-width: 100%;
     margin: 0 auto;
     min-height: 100%;
-    background-color: #F6F7F8;
 }
 
 
@@ -69,7 +65,7 @@ html, body {
 .nav-li a:hover {
     border-bottom: 2px solid #8601AE;
     padding-bottom: 5px;
-    color: #00E676;
+    color: #E81B27;
 }
 
 /*
@@ -96,7 +92,7 @@ html, body {
 }
 
 .social-icons-li a:hover {
-    color: #00E676;
+    color: #E81B27;
 }
 
 /*
@@ -139,7 +135,7 @@ html, body {
 
 .title span {
     font-size: 3rem;
-    color: #00E676;
+    color: #E81B27;
     font-weight: 700;
 }
 
@@ -172,7 +168,7 @@ html, body {
 }
 
 .about-text p a {
-    color: #00E676;
+    color: #E81B27;
     text-decoration: none;
 }
 

@@ -15,28 +15,32 @@ let body = $('.container');
 
 // Hidden about me section on page load
 
-aboutSection.hide();
-workSection.hide();
+$(window).on('load', function() {
+  aboutSection.css('display', 'none');
+  workSection.css('display', 'none');
+})
+// aboutSection.hide();
+// workSection.hide();
 
 
 
 
 // Button to call about section
 aboutBtn.on('click', () => {
-    nameSection.hide();
+    nameSection.css('display', 'none');
     aboutSection.fadeIn();
-    workSection.hide();
+    workSection.css('display', 'none');
 });
 
 // Button to call work section
 workBtn.on('click', () => {
-  nameSection.hide();
+  nameSection.css('display', 'none');
   workSection.fadeIn();
-  aboutSection.hide();
+  aboutSection.css('display', 'none');
 });
 
 homeBtn.on('click', () => {
   nameSection.fadeIn();
-  workSection.hide();
-  aboutSection.hide();
+  workSection.css('display', 'none');
+  aboutSection.css('display', 'none');
 });
