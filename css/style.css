@@ -4,6 +4,11 @@
 /* Last Green #65AF32 */
 /* Main Purple #8601AE */
 
+:root {
+    --main-color: #8601AE;
+    --secondary-color: #65AF32;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,17 +25,18 @@ html, body {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 5%;
-    color: #E81B27;
+    color: var(--main-color);
 }
 
 /*
 * Main container
 */
-/* background-image: url("../img/color1.png"); */
+
 .container {
-    background-color: #B6C2D2;
+    background-image: url("../hero.png");
+    background-size: fixed;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
     max-width: 100%;
     margin: 0 auto;
     min-height: 100%;
@@ -63,18 +69,18 @@ html, body {
 }
 
 .nav-li a:hover {
-    border-bottom: 2px solid #8601AE;
+    border-bottom: 2px solid var(--main-color);
     padding-bottom: 5px;
-    color: #E81B27;
 }
+
 
 /*
 * Social icons
 */
 
 .social-icons {
-    width: 400px;
-    margin-top: 50px;
+    width: 350px;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .social-icons-ul {
@@ -83,6 +89,7 @@ html, body {
     justify-content: space-between;
     list-style: none;
     font-size: 2.5rem;
+    margin: 80px 0 20px 0;
     
 }
 
@@ -92,7 +99,7 @@ html, body {
 }
 
 .social-icons-li a:hover {
-    color: #E81B27;
+    color: var(--secondary-color);
 }
 
 /*
@@ -124,7 +131,7 @@ html, body {
 
 .name span {
     font-size: 3rem;
-    color: #8601AE;
+    color: var(--main-color);
     font-weight: 700;
 }
 
@@ -135,7 +142,7 @@ html, body {
 
 .title span {
     font-size: 3rem;
-    color: #E81B27;
+    color: var(--secondary-color);
     font-weight: 700;
 }
 
@@ -150,7 +157,7 @@ html, body {
 }
 
 .email a:hover {
-    color: #8601AE;
+    color: var(--main-color);
 }
 
 /*
@@ -168,17 +175,17 @@ html, body {
 }
 
 .about-text p a {
-    color: #E81B27;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
 .about-text p a:hover {
-    color: #8601AE;
+    color: var(--main-color);
 }
 
 .container-about img {
     width: 180px;
-    border: 3px solid #8601AE;
+    border: 3px solid var(--main-color);
     border-radius: 50%;
     padding: 3px;
     display: block;
@@ -235,7 +242,7 @@ html, body {
 
 .work h5 {
    background-color: transparent;
-   color: #8601AE;
+   color: var(--main-color);
    font-size: 1.25rem;
    text-align: center;
    margin-bottom: 15px;
@@ -247,7 +254,7 @@ html, body {
 }
 
 .project-icons a {
-    color: #8601AE;
+    color: var(--main-color);
     font-size: 2rem;
     margin-left: 10px;
 }

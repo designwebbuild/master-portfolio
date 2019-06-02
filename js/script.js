@@ -18,6 +18,8 @@ let body = $('.container');
 $(window).on('load', function() {
   aboutSection.css('display', 'none');
   workSection.css('display', 'none');
+  nameSection.hide();
+  nameSection.slideDown(2000);
 })
 // aboutSection.hide();
 // workSection.hide();
