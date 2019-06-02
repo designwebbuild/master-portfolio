@@ -132,7 +132,6 @@
 
     .name {
         font-size: 1.2rem;
-        font-weight: 200;
     }
 
     .title {
@@ -141,10 +140,12 @@
 
     .social-icons {
         width: 150px;
+        margin-top: 20px;
     }
 
     .social-icons-ul {
         font-size: 1.5rem;
+        margin: 0;
     }
 
     .container-about {
