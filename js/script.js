@@ -16,9 +16,6 @@ let body = $('.container');
 // Hidden about me section on page load
 aboutSection.css('display', 'none');
 workSection.css('display', 'none');
-nameSection.hide();
-nameSection.slideDown(2000);
-
 
 // Button to call about section
 aboutBtn.on('click', () => {
