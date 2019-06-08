@@ -159,7 +159,7 @@ html, body {
 
 .about-text {
     display: block;
-    margin: 30px auto 0 auto; 
+    margin: 30px auto 50px auto; 
 }
 
 .about-text p a {
@@ -171,7 +171,7 @@ html, body {
     color: var(--main-color);
 }
 
-.container-about img {
+.profile-img {
     width: 180px;
     border: 3px solid var(--main-color);
     border-radius: 50%;
@@ -185,20 +185,10 @@ html, body {
     line-height: 2.5rem;
 }
 
-.tech-stack {
+.pdf-img {
+    width: 100px;
     display: block;
-    margin: 15% auto 0 auto;
-}
-
-.tech-stack ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.tech-stack li {
-    list-style: none;
-    font-size: 4rem;
-    margin: 5%;
+    margin: 0 auto;
 }
 
 /*
