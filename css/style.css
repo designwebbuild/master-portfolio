@@ -1,7 +1,7 @@
 /* Main Colors */
 :root {
-    --main-color: #8601AE;
-    --secondary-color: #65AF32;
+    --main-color: #ff672b;
+    --secondary-color: #2bdcff;
 }
 
 * {
@@ -28,7 +28,7 @@ html, body {
 */
 
 .container {
-    background-image: url("../hero.png");
+    background-image: url("../img/hero.png");
     background-size: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@ html, body {
 
 .social-icons {
     width: 350px;
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 2px solid #3e3e3e;
 }
 
 .social-icons-ul {
@@ -124,23 +124,10 @@ html, body {
     margin-bottom: 30px;
 }
 
-.name span {
-    font-size: 3rem;
-    color: var(--main-color);
-    font-weight: 700;
-}
-
 .title {
     font-size: 3rem;
     font-weight: 200;
 }
-
-.title span {
-    font-size: 3rem;
-    color: var(--secondary-color);
-    font-weight: 700;
-}
-
 
 
 /*
@@ -183,7 +170,7 @@ html, body {
 .pdf-img {
     width: 100px;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 /*
@@ -215,7 +202,7 @@ html, body {
 
 .work h5 {
    background-color: transparent;
-   color: var(--main-color);
+   color: #000;
    font-size: 1.25rem;
    text-align: center;
    margin-bottom: 15px;
@@ -227,13 +214,13 @@ html, body {
 }
 
 .project-icons a {
-    color: var(--main-color);
+    color: #000;
     font-size: 2rem;
     margin-left: 10px;
 }
 
 .project-icons a:hover {
-    color: #bbb;
+    color: var(--secondary-color);
 }
 
 
