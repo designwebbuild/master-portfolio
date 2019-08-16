@@ -28,10 +28,6 @@ html, body {
 */
 
 .container {
-    /* background-image: url("../img/hero.png"); */
-    /* background-size: fixed; */
-    /* background-position: top; */
-    /* background-repeat: no-repeat; */
     max-width: 100%;
     margin: 0 auto;
     min-height: 100%;
@@ -202,7 +198,7 @@ html, body {
 
 .work h5 {
    background-color: transparent;
-   color: #000;
+   color: #030303;
    font-size: 1.25rem;
    text-align: center;
    margin-bottom: 15px;
@@ -214,7 +210,7 @@ html, body {
 }
 
 .project-icons a {
-    color: #000;
+    color: #030303;
     font-size: 2rem;
     margin-left: 10px;
 }

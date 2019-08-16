@@ -11,6 +11,7 @@ let workSection = $('#work-section');
 let nameSection = $('#name-section');
 let blogSection = $('#blog-section');
 let body = $('.container');
+let work = $('.work');
 
 
 // Hidden about me section on page load
@@ -27,7 +28,7 @@ aboutBtn.on('click', () => {
 // Button to call work section
 workBtn.on('click', () => {
   nameSection.css('display', 'none');
-  workSection.fadeIn();
+  workSection.slideDown();
   aboutSection.css('display', 'none');
 });
 
