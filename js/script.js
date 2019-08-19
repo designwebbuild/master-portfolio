@@ -13,7 +13,6 @@ let blogSection = $('#blog-section');
 let body = $('.container');
 let work = $('.work');
 
-
 // Hidden about me section on page load
 aboutSection.css('display', 'none');
 workSection.css('display', 'none');

@@ -1,13 +1,13 @@
 /* Main Colors */
 :root {
-    --main-color: #ff672b;
-    --secondary-color: #2bdcff;
+    --main-color: #3157A7;
+    --secondary-color: #F69179;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif, monospace;
     box-sizing: border-box;
 }
 
@@ -115,8 +115,9 @@ html, body {
 }
 
 .name {
+    letter-spacing: 4px;
     font-size: 3.5rem;
-    font-weight: 200;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 
@@ -136,17 +137,20 @@ html, body {
 }
 
 .about-text {
+    color: #2f2525;
     display: block;
     margin: 30px auto 50px auto; 
+    letter-spacing: 3px;
 }
 
 .about-text p a {
-    color: var(--secondary-color);
-    text-decoration: none;
+    font-size: 22px;
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
 }
 
 .about-text p a:hover {
-    color: var(--main-color);
+    color: var(--secondary-color);
 }
 
 .profile-img {
@@ -155,18 +159,12 @@ html, body {
     border-radius: 50%;
     padding: 3px;
     display: block;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .container-about p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 2.5rem;
-}
-
-.pdf-img {
-    width: 100px;
-    display: block;
-    margin: 20px auto;
 }
 
 /*
@@ -205,19 +203,54 @@ html, body {
 }
 
 .project-icons {
-   background-color: transparent;
    text-align: center;
+   margin-top: 10px;
 }
 
-.project-icons a {
-    color: #030303;
-    font-size: 2rem;
-    margin-left: 10px;
+.github-btn {
+    position: relative;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    border: none;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    box-shadow: 0 5px #eee;
+    text-transform: uppercase;
+    color: #fff;
 }
 
-.project-icons a:hover {
-    color: var(--secondary-color);
+.github-btn:hover {
+    top: 1px;
+    box-shadow: 0 3px #eee;
+    background-color: rgba(246, 145, 121, 0.7);
+    
 }
+
+.live-btn {
+    position: relative;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    box-shadow: 0 5px #eee;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.live-btn:hover {
+    top: 1px;
+    box-shadow: 0 3px #eee;
+    background-color: rgba(49, 87, 167, 0.7);
+}
+
+
 
 
 
