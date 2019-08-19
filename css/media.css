@@ -1,6 +1,6 @@
 /* Media Queries */
 
-@Media only screen and (min-width: 900px) {
+@Media only screen and (max-width: 900px) and (min-width: 1240px) {
     .social-icons {
         width: 40%;
         margin-top: 50px;
@@ -80,7 +80,7 @@
     }
 
     .about-text p {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         line-height: 2.5rem;
         letter-spacing: 2px;
     }
@@ -144,21 +144,28 @@
     }
 
     .about-text p {
-        letter-spacing: 3px;
-        font-size: 1.1rem;
+        letter-spacing: 2px;
+        font-size: 1rem;
+        line-height: 2rem;
     }
 
     .work {
-        margin-bottom: 20px;
-        height: 180px;
+        height: 90%;
+        margin-bottom: 30px;
     }
 
     .work h5 {
-        font-size: 0.6rem;
+        font-size: 1.4rem;
     }
 
     .github-btn {
         margin-bottom: 5px;
+        width: 200px;
+        margin-right: 0;
+    }
+    .live-btn {
+        width: 200px;
+        margin-left: 0;
     }
 
 }
