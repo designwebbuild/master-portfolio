@@ -2,6 +2,7 @@
 :root {
     --main-color: #3157A7;
     --secondary-color: #F69179;
+    --text-color: #231f20;
 }
 
 * {
@@ -52,10 +53,11 @@ html, body {
 }
 
 .nav-li a {
+    text-transform: uppercase;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #000;
+    color: var(--text-color);
     transition: 0.1s;
 }
 
@@ -71,7 +73,7 @@ html, body {
 
 .social-icons {
     width: 350px;
-    border-bottom: 2px solid #3e3e3e;
+    border-bottom: 2px solid var(--text-color);
 }
 
 .social-icons-ul {
@@ -85,7 +87,7 @@ html, body {
 }
 
 .social-icons-li a {
-    color: #000;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -119,11 +121,13 @@ html, body {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 30px;
+    color: var(--text-color);
 }
 
 .title {
     font-size: 3rem;
     font-weight: 200;
+    color: var(--text-color);
 }
 
 
@@ -137,26 +141,27 @@ html, body {
 }
 
 .about-text {
-    color: #2f2525;
+    color: var(--text-color);
     display: block;
     margin: 30px auto 50px auto; 
     letter-spacing: 3px;
 }
 
 .about-text p a {
+    text-decoration: none;
     font-size: 22px;
     color: var(--main-color);
-    border-bottom: 2px solid var(--main-color);
 }
 
 .about-text p a:hover {
     color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .profile-img {
     width: 180px;
-    border: 3px solid var(--main-color);
     border-radius: 50%;
+    border: 3px solid var(--main-color);
     padding: 3px;
     display: block;
     margin: 40px auto;
@@ -196,7 +201,7 @@ html, body {
 
 .work h5 {
    background-color: transparent;
-   color: #030303;
+   color: var(--text-color);
    font-size: 1.25rem;
    text-align: center;
    margin-bottom: 15px;
