@@ -27,7 +27,7 @@ aboutBtn.on('click', () => {
 // Button to call work section
 workBtn.on('click', () => {
   nameSection.css('display', 'none');
-  workSection.slideDown();
+  workSection.fadeIn();
   aboutSection.css('display', 'none');
 });
 
