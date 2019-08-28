@@ -202,12 +202,15 @@ html, body {
     background-color: rgba(246, 145, 121, 0.3);
     color: var(--text-color);
     display: block;
-    margin: 30px auto 50px auto;
+    margin: 30px auto 0 auto;
     padding: 5px; 
     letter-spacing: 3px;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.about-text p a {
+.links {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 700;
@@ -215,7 +218,7 @@ html, body {
     transition: 0.1s;
 }
 
-.about-text p a:hover {
+.links:hover {
     color: var(--secondary-color);
     border-bottom: 2px solid var(--main-color);
     padding-bottom: 5px;
@@ -235,9 +238,29 @@ html, body {
     background-color: #fff;
 }
 
-.container-about p {
+.about-info {
+    width: 100%;
+    background-color: rgba(49, 87, 167, 0.3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.about-info p {
+    color: var(--text-color);
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 5px; 
+    letter-spacing: 3px;
     font-size: 1.4rem;
     line-height: 2.5rem;
+}
+
+.illustration-img {
+    display: inline-block;
+    width: 200px;
+
 }
 
 /*
