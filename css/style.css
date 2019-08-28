@@ -114,7 +114,7 @@ html, body {
 .logo-img img {
     display: block;
     width: 200px;
-    margin: 0 auto;
+    margin: 30px auto;
     animation-name: logo-animation;
     animation-duration: 2s;
 }
@@ -199,7 +199,7 @@ html, body {
 }
 
 .about-text {
-    background-color: rgba(246, 145, 121, 0.3);
+    background-color: rgba(246, 145, 121, 0.1);
     color: var(--text-color);
     display: block;
     margin: 30px auto 0 auto;
@@ -240,11 +240,11 @@ html, body {
 
 .about-info {
     width: 100%;
-    background-color: rgba(49, 87, 167, 0.3);
+    background-color: rgba(49, 87, 167, 0.1);
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+    margin-bottom: 20px;
 }
 
 .about-info p {
@@ -260,6 +260,7 @@ html, body {
 .illustration-img {
     display: inline-block;
     width: 200px;
+    margin: 10px;
 
 }
 
