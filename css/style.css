@@ -1,20 +1,20 @@
 /* Main Colors */
 :root {
     --main-color: #3157A7;
-    --secondary-color: #F69179;
-    --text-color: #231f20;
+    --secondary-color: #f69179;
+    --text-color: #111;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', sans-serif, monospace;
+    font-family: 'Quicksand', sans-serif, monospace;
     box-sizing: border-box;
 }
 
 html, body {
     height: 100vh;
-    background: #eee;
+    background-color: #fff;
 }
 /* All h4 sub-titles */
 .sub-title {
@@ -23,6 +23,14 @@ html, body {
     text-align: center;
     margin-bottom: 5%;
     color: var(--main-color);
+}
+
+.sub-title-name {
+    font-size: 2.2rem;
+    margin-left: 5px;
+    background-color: rgba(49, 87, 167, 0.3);
+    padding: 5px;
+    color: #fff;
 }
 
 /*
@@ -41,15 +49,16 @@ html, body {
 */
 
 .nav {
-    max-width: 50%;
+    max-width: 100%;
     margin: 0 auto;
-    padding-top: 30px;
+    padding: 20px;
+    border-bottom: 1px solid #111;
 }
 
 .nav-ul-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     list-style: none;
 }
 
@@ -57,9 +66,10 @@ html, body {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 200;
     color: var(--text-color);
     transition: 0.2s;
+    margin: 20px;
 }
 
 .nav-li a:hover {
@@ -105,11 +115,11 @@ html, body {
     display: block;
     width: 200px;
     margin: 0 auto;
-    animation-name: logo-anime;
+    animation-name: logo-animation;
     animation-duration: 2s;
 }
 
-@keyframes logo-anime {
+@keyframes logo-animation {
     0% {
         opacity: 0;
         transform: scale(0);
@@ -119,7 +129,6 @@ html, body {
         transform: scale(2);
     }
     100% {
-        opacity: 1;
         transform: scale(1);
         transform: translateY(0);
     }
@@ -130,24 +139,54 @@ html, body {
 */
 
 .name-section {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
 }
 
 .name {
+    background-color: rgba(49, 87, 167, 0.3);
+    padding: 7px;
     letter-spacing: 4px;
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 30px;
     color: var(--text-color);
+    animation-name: name-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes name-animation {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0)
+    }
 }
 
 .title {
+    background-color: rgba(246, 145, 121, 0.3);
+    padding: 5px;
     font-size: 3rem;
     font-weight: 200;
     color: var(--text-color);
+    animation-name: title-animation;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes title-animation {
+    0% {
+        transform: translateX(500px);
+        opacitu: 0;
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /*
@@ -160,15 +199,18 @@ html, body {
 }
 
 .about-text {
+    background-color: rgba(246, 145, 121, 0.3);
     color: var(--text-color);
     display: block;
-    margin: 30px auto 50px auto; 
+    margin: 30px auto 50px auto;
+    padding: 5px; 
     letter-spacing: 3px;
 }
 
 .about-text p a {
     text-decoration: none;
     font-size: 1.5rem;
+    font-weight: 700;
     color: var(--main-color);
     transition: 0.1s;
 }
@@ -182,7 +224,7 @@ html, body {
 .profile-img {
     width: 180px;
     border-radius: 50%;
-    border: 3px solid #eee;
+    border: 3px solid;
     border-top-color: var(--secondary-color);
     border-left-color: var(--secondary-color);
     border-bottom-color: var(--main-color);
@@ -203,6 +245,7 @@ html, body {
 */
 .work-section {
     margin-top: 5%;
+    
 }
 
 .container-work {
@@ -214,7 +257,7 @@ html, body {
 }
 
 .work {
-    width: 300px;
+    width: 250px;
     height: 250px;
     margin: 10px 10px 20px 10px;
     
@@ -222,13 +265,14 @@ html, body {
 
 .work img {
   width: 100%;
-  height: 70%;
+  height: 60%;
 }
 
 .work h5 {
    background-color: transparent;
    color: var(--text-color);
    font-size: 1.25rem;
+   font-weight: 700;
    text-align: center;
    margin-bottom: 15px;
 }
@@ -248,14 +292,12 @@ html, body {
     border: none;
     background-color: var(--secondary-color);
     border-radius: 50px;
-    box-shadow: 0 5px #eee;
     text-transform: uppercase;
     color: #fff;
 }
 
 .github-btn:hover {
     top: 1px;
-    box-shadow: 0 3px #eee;
     background-color: rgba(246, 145, 121, 0.7);
     
 }
@@ -270,14 +312,12 @@ html, body {
     border: none;
     background-color: var(--main-color);
     border-radius: 50px;
-    box-shadow: 0 5px #eee;
     text-transform: uppercase;
     color: #fff;
 }
 
 .live-btn:hover {
     top: 1px;
-    box-shadow: 0 3px #eee;
     background-color: rgba(49, 87, 167, 0.7);
 }
 
