@@ -113,24 +113,51 @@ html, body {
 
 .logo-img img {
     display: block;
-    width: 200px;
-    margin: 30px auto;
-    animation-name: logo-animation;
-    animation-duration: 2s;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    opacity: 0;
+    animation: logo-animation 1s 2s forwards;
 }
 
+@-webkit-keyframes logo-animation {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        -webkit-transform: translateY(-300px);
+                transform: translateY(-300px);
+    }
+    50% {
+        -webkit-transform: scale(2);
+                transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
 @keyframes logo-animation {
     0% {
         opacity: 0;
-        transform: scale(0);
-        transform: translateY(-300px);
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        -webkit-transform: translateY(-300px);
+                transform: translateY(-300px);
     }
     50% {
-        transform: scale(2);
+        -webkit-transform: scale(2);
+                transform: scale(2);
     }
     100% {
-        transform: scale(1);
-        transform: translateY(0);
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
 }
 
@@ -153,18 +180,29 @@ html, body {
     font-weight: 700;
     margin-bottom: 30px;
     color: var(--text-color);
-    animation-name: name-animation;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation: name-animation 2s ease-in-out;
 }
 
-@keyframes name-animation {
+@-webkit-keyframes name-animation {
     0% {
-        transform: translateX(-500px);
+        -webkit-transform: translateX(-500px);
+                transform: translateX(-500px);
         opacity: 0;
     }
     100% {
-        transform: translateX(0)
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
+    }
+}
+@keyframes name-animation {
+    0% {
+        -webkit-transform: translateX(-500px);
+                transform: translateX(-500px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
     }
 }
 
@@ -174,18 +212,33 @@ html, body {
     font-size: 3rem;
     font-weight: 200;
     color: var(--text-color);
-    animation-name: title-animation;
-    animation-duration: 2s;
+    opacity: 0;
+    animation: title-animation 2s 1s forwards;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-@keyframes title-animation {
+@-webkit-keyframes title-animation {
     0% {
-        transform: translateX(500px);
-        opacitu: 0;
+        -webkit-transform: translateX(500px);
+                transform: translateX(500px);
+        opacity: 0;
     }
     100% {
-        transform: translateX(0);
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+@keyframes title-animation {
+    0% {
+        -webkit-transform: translateX(500px);
+                transform: translateX(500px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
     }
 }
 
