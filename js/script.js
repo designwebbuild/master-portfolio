@@ -36,3 +36,16 @@ homeBtn.on('click', () => {
   workSection.css('display', 'none');
   aboutSection.css('display', 'none');
 });
+
+// darkModeBtn.on('click', () => {
+//   $('html').toggleClass('dark-mode');
+  
+//   $.fn.extend({
+//     toggleText: function(a, b){
+//         return this.text(this.text() == b ? a : b);
+//     }
+//   });
+  
+//   darkModeBtn.toggleText('Get Dark Mode', 'Switch Off');
+// });
+
