@@ -256,11 +256,17 @@ html, body {
     color: var(--text-color);
     display: block;
     margin: 30px auto 0 auto;
-    padding: 5px; 
+    padding: 15px; 
     letter-spacing: 3px;
     font-size: 1.4rem;
     line-height: 2.5rem;
     margin-bottom: 10px;
+}
+
+.about-text:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    bottom: 2px;
 }
 
 .links {
@@ -297,7 +303,13 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.about-info:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    bottom: 2px;
 }
 
 .about-info p {
@@ -334,15 +346,19 @@ html, body {
 }
 
 .work {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 10px;
     width: 250px;
     height: 250px;
-    margin: 10px 10px 20px 10px;
-    
+    margin: 15px 15px 20px 15px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .work img {
   width: 100%;
-  height: 60%;
+  height: 50%;
 }
 
 .work h5 {
