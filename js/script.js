@@ -14,6 +14,7 @@ let body = $('.container');
 let work = $('.work');
 
 // Hidden about me section on page load
+nameSection.css('display', '');
 aboutSection.css('display', 'none');
 workSection.css('display', 'none');
 contactSection.css('display', 'none');

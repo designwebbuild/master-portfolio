@@ -189,4 +189,23 @@
         line-height: 2rem;
     }
 
+    .form-info {
+        width: 300px;
+        height: 40px;
+        margin: 10px;
+        padding-top: 10px;
+        padding-left: 5px;
+        font-size: 1.25rem;
+        border: 1px solid lightgray;
+    }
+
+    .form-message {
+        width: 300px;
+        margin: 10px;
+        height: 200px;
+        font-size: 1.25rem;
+        padding: 5px;
+        border: 1px solid lightgray;
+    }
+
 }

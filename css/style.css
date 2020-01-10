@@ -117,7 +117,7 @@ html, body {
     margin: 0 auto;
     margin-bottom: 100px;
     opacity: 0;
-    animation: logo-animation 1s 2s forwards;
+    animation: logo-animation 1s 1s forwards;
 }
 
 @-webkit-keyframes logo-animation {
@@ -180,7 +180,7 @@ html, body {
     font-weight: 700;
     margin-bottom: 30px;
     color: var(--text-color);
-    animation: name-animation 2s ease-in-out;
+    animation: name-animation 01s ease-in-out;
 }
 
 @-webkit-keyframes name-animation {
@@ -213,7 +213,7 @@ html, body {
     font-weight: 200;
     color: var(--text-color);
     opacity: 0;
-    animation: title-animation 2s 1s forwards;
+    animation: title-animation 1s 0.5s forwards;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -416,7 +416,55 @@ html, body {
 
 /* Section contact */
 
+.container-contact {
+    width: 60%;
+    height: 100%;
+    margin: 100px auto;
+}
 
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-info {
+    width: 500px;
+    height: 50px;
+    margin: 10px;
+    padding-top: 20px;
+    padding-left: 5px;
+    font-size: 1.25rem;
+    border: 1px solid lightgray;
+}
+
+.form-message {
+    width: 500px;
+    margin: 10px;
+    height: 200px;
+    font-size: 1.25rem;
+    padding: 5px;
+    border: 1px solid lightgray;
+}
+
+.contact-btn {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.contact-btn:hover {
+    background-color: rgba(49, 87, 167, 0.7);
+}
 
 
 
