@@ -179,6 +179,10 @@
         margin-left: 0;
     }
 
+    .container-contact {
+        margin-top: -40px;
+    }
+
     .about-info {
         flex-direction: column-reverse;
     }
