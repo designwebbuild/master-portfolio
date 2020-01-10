@@ -45,7 +45,7 @@
           <li class="nav-li"><a href="#" id="home">Home</a></li>
           <li class="nav-li"><a href="#" id="about">About</a></li>
           <li class="nav-li"><a href="#" id="work">Projects</a></li>
-          <li class="nav-li"><a href="https://dev.to/kreso66maric" rel="noreferrer">Blog</a></li>
+          <li class="nav-li"><a href="#" id="contact">Contact</a></li>
         </ul>
       </div>
       <!-- Menu ends -->
@@ -189,6 +189,38 @@
         </div>
       </section>
       <!-- Work section ends -->
+
+      <!-- Contact section -->
+
+      <contact class="contact-section" id="contact-section">
+        <h1>Hello</h1>
+        <div class="container-contact">
+          <form action="POST" data-netlify="true">
+            <div class="fields">
+              <div class="field half">
+                <input type="text name="name" id="name" placeholder="Name" />
+              </div>  
+              <div class="field half">
+                <input type="email" name="email" id="email" placeholder="Email" />
+              </div>
+              <div class="field">
+                <textarea name="message" id="message" rows="7" placeholder="Message"></textarea>
+              </div>
+              <div class="field">
+                <input type="file" name="myfile" id="myfile" placeholder="Upload File" />
+              </div>
+              <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+            </div>
+            <ul class="actions">
+              <li>
+                <input type="submit" value="Send Message" class="button primary" />
+              </li>
+            </ul>
+          </form>
+        </div>
+      </contact>
 
 
     </div>
