@@ -105,12 +105,11 @@
 @Media only screen and (max-width: 500px) {
     
     .name-section {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .logo-img img {
-        width: 200px;
-        margin-top: 50px;
+        width: 250px;
     }
 
     .sub-title {
@@ -119,16 +118,16 @@
 
     .nav {
         padding-top: 20px;
+        width: 80%;
     }
 
     .nav-li a {
-        font-size: 1rem;
-        margin: 20px;
+        font-size: 1.2rem;
+        margin: 10px;
     }
 
     .name {
         font-size: 1.7rem;
-        margin-top: 50px;
     }
 
     .title {
@@ -137,12 +136,12 @@
 
     .social-icons {
         width: 150px;
-        margin: 60px;
     }
 
     .social-icons-ul {
         font-size: 1.7rem;
-        margin-bottom: 40px;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 
     .container-about {
