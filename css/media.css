@@ -168,9 +168,14 @@
         line-height: 2rem;
     }
 
+    .work-section {
+        background: var(--main-color);
+    }
+
     .work {
         height: 60%;
         margin-bottom: 30px;
+        background: #fff;
     }
 
     .work h5 {
