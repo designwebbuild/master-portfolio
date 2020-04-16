@@ -70,19 +70,28 @@
         font-size: 2rem;
     }
 
+    .sub-title-name {
+        font-size: 2.1rem;
+    }
+
 
     .social-icons {
         width: 200px;
     }
 
     .container-about {
-        margin: 0 10%;
+        width: 100vw;
+        margin: 10px;
     }
 
     .about-text p {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         line-height: 2.5rem;
         letter-spacing: 2px;
+    }
+
+    .about-par a {
+        font-size: 1.5rem;
     }
 
     .sub-title {
@@ -96,7 +105,7 @@
 
     .about-info p {
         letter-spacing: 2px;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         line-height: 2.5rem;
     }
 
@@ -121,8 +130,9 @@
     }
 
     .sub-title-name {
-        position: relative;
-        top: 10px;
+        font-size: 1.5rem;
+        /* position: relative; */
+        /* top: 10px; */
     }
 
     .nav {
@@ -164,16 +174,21 @@
 
     .about-text p {
         letter-spacing: 2px;
-        font-size: 1rem;
+        font-size: 1.25rem;
         line-height: 2rem;
     }
 
-    .work-section {
-        background: var(--main-color);
+    .about-par a {
+        font-size: 1.25rem;
+    }
+
+    .container-work {
+        width: 100%;
     }
 
     .work {
         height: 60%;
+        width: 90%;
         margin-bottom: 30px;
         background: #fff;
     }
@@ -202,7 +217,7 @@
 
     .about-info p {
         letter-spacing: 2px;
-        font-size: 1rem;
+        font-size: 1.25rem;
         line-height: 2rem;
     }
 

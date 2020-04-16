@@ -1,63 +1,55 @@
 /*
 * DOM elements
 */
-let homeBtn = $('#home');
-let aboutBtn = $('#about');
-let workBtn = $('#work');
-let blogBtn = $('#blog');
-let contactBtn = $('#contact');
-let aboutSection = $('#about-section');
-let workSection = $('#work-section');
-let nameSection = $('#name-section');
-let contactSection = $('#contact-section');
-let body = $('.container');
-let work = $('.work');
+let homeBtn = document.getElementById('home');
+let aboutBtn = document.getElementById('about');
+let workBtn = document.getElementById('work');
+let contactBtn = document.getElementById('contact');
+let aboutSection = document.getElementById('about-section');
+let workSection = document.getElementById('work-section');
+let nameSection = document.getElementById('name-section');
+let contactSection = document.getElementById('contact-section');
+let body = document.querySelector('.container');
+let work = document.querySelector('.work');
 
-// Hidden about me section on page load
-nameSection.css('display', '');
-aboutSection.css('display', 'none');
-workSection.css('display', 'none');
-contactSection.css('display', 'none');
+// Hidden on page load
+nameSection.style.display = '';
+aboutSection.style.display = 'none';
+workSection.style.display = 'none';
+contactSection.style.display = 'none';
 
 // Button to call about section
-aboutBtn.on('click', () => {
-    nameSection.css('display', 'none');
-    aboutSection.fadeIn();
-    workSection.css('display', 'none');
-    contactSection.css('display', 'none');
+aboutBtn.addEventListener('click', () => {
+    nameSection.style.display = 'none';
+    // aboutSection.classList.add('show');
+    aboutSection.style.display = '';
+    workSection.style.display = 'none';
+    contactSection.style.display = 'none';
 });
 
 // Button to call work section
-workBtn.on('click', () => {
-  nameSection.css('display', 'none');
-  workSection.fadeIn();
-  aboutSection.css('display', 'none');
-  contactSection.css('display', 'none');
+workBtn.addEventListener('click', () => {
+  nameSection.style.display = 'none';
+  // workSection.classList.add('show');
+  workSection.style.display = '';
+  aboutSection.style.display = 'none';
+  contactSection.style.display = 'none';
 });
 
-homeBtn.on('click', () => {
-  nameSection.fadeIn();
-  workSection.css('display', 'none');
-  aboutSection.css('display', 'none');
-  contactSection.css('display', 'none');
+// Button to call home section
+homeBtn.addEventListener('click', () => {
+  // nameSection.classList.add('show');
+  nameSection.style.display = '';
+  workSection.style.display = 'none';
+  aboutSection.style.display = 'none';
+  contactSection.style.display = 'none';
 });
 
-contactBtn.on('click', () => {
-  nameSection.css('display', 'none');
-  aboutSection.css('display', 'none');
-  workSection.css('display', 'none');
-  contactSection.fadeIn();
-})
-
-// darkModeBtn.on('click', () => {
-//   $('html').toggleClass('dark-mode');
-  
-//   $.fn.extend({
-//     toggleText: function(a, b){
-//         return this.text(this.text() == b ? a : b);
-//     }
-//   });
-  
-//   darkModeBtn.toggleText('Get Dark Mode', 'Switch Off');
-// });
-
+// Button to call contact section
+contactBtn.addEventListener('click', () => {
+  nameSection.style.display = 'none';
+  aboutSection.style.display = 'none';
+  workSection.style.display = 'none';
+  // contactSection.classList.add('show');
+  contactSection.style.display = '';
+});
