@@ -81,13 +81,17 @@
 
     .container-about {
         width: 100vw;
-        margin: 10px;
+        margin: 0;
     }
 
     .about-text p {
         font-size: 1.5rem;
         line-height: 2.5rem;
         letter-spacing: 2px;
+    }
+
+    .about-par {
+        padding: 10px;
     }
 
     .about-par a {
@@ -126,13 +130,11 @@
     }
 
     .sub-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .sub-title-name {
-        font-size: 1.5rem;
-        /* position: relative; */
-        /* top: 10px; */
+        font-size: 2rem;
     }
 
     .nav {
@@ -146,11 +148,11 @@
     }
 
     .name {
-        font-size: 1.7rem;
+        font-size: 2.5rem;
     }
 
     .title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .social-icons {
@@ -164,11 +166,11 @@
     }
 
     .container-about {
-        margin: 0 5%;
+        margin: 0;
     }
 
     .container-about img {
-        width: 230px;
+        width: 200px;
         margin-top: 30px;
     }
 
@@ -208,7 +210,8 @@
     }
 
     .container-contact {
-        margin-top: -40px;
+        margin: 0;
+        width: 100%;
     }
 
     .about-info {
@@ -222,17 +225,16 @@
     }
 
     .form-info {
-        width: 300px;
+        width: 100%;
         height: 40px;
         margin: 10px;
         padding-top: 10px;
-        padding-left: 5px;
         font-size: 1.25rem;
         border: 1px solid lightgray;
     }
 
     .form-message {
-        width: 300px;
+        width: 100%;
         margin: 10px;
         height: 200px;
         font-size: 1.25rem;

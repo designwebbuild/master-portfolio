@@ -25,6 +25,7 @@ html, body {
     text-align: center;
     margin-bottom: 5%;
     color: var(--secondary-color);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
 .sub-title-name {
@@ -117,7 +118,7 @@ html, body {
     width: 400px;
     margin: 0 auto;
     opacity: 0;
-    animation: logo-animation 1s 1s forwards;
+    animation: logo-animation 0.6s 1s forwards;
 }
 
 @-webkit-keyframes logo-animation {
@@ -178,7 +179,7 @@ html, body {
     font-weight: 900;
     margin-bottom: 30px;
     color: var(--main-color);
-    animation: name-animation 01s ease-in-out;
+    animation: name-animation 0.6s ease-in-out;
 }
 
 @-webkit-keyframes name-animation {
@@ -210,7 +211,7 @@ html, body {
     text-transform: uppercase;
     color: var(--secondary-color);
     opacity: 0;
-    animation: title-animation 1s 0.5s forwards;
+    animation: title-animation 0.6s 0.5s forwards;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -300,6 +301,10 @@ html, body {
     letter-spacing: 3px;
     font-size: 2rem;
     line-height: 3rem;
+}
+
+.about-par {
+    text-align: center;
 }
 
 .illustration-img {
