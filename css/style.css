@@ -1,6 +1,6 @@
 /* Main Colors */
 :root {
-    --main-color: #01579B;
+    --main-color: #2196F3;
     --secondary-color: #F57F17;
     --text-color: #333;
 }
@@ -458,9 +458,3 @@ html, body {
     top: 1px;
     background: var(--text-color);
 }
-  
-
-
-
-
-
