@@ -1,4 +1,5 @@
-/*
+window.addEventListener('DOMContentLoaded', (event) => {
+  /*
 * DOM elements
 */
 let homeBtn = document.getElementById('home');
@@ -52,4 +53,6 @@ contactBtn.addEventListener('click', () => {
   workSection.style.display = 'none';
   // contactSection.classList.add('show');
   contactSection.style.display = '';
+});
+
 });
