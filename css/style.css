@@ -33,7 +33,7 @@ html, body {
     font-size: 3rem;
     margin-left: 5px;
     padding: 5px;
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 /*
@@ -76,9 +76,9 @@ html, body {
 }
 
 .nav-li a:hover {
-    border-bottom: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 5px;
-    color: var(--secondary-color);
+    color: var(--main-color);
 }
 
 
