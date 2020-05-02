@@ -15,7 +15,6 @@
 
 html, body {
     height: 100vh;
-    background-color: #fff;
 }
 
 
@@ -139,8 +138,6 @@ html, body {
         opacity: 0;
         -webkit-transform: scale(0);
                 transform: scale(0);
-        -webkit-transform: translateX(-300px);
-                transform: translateX(-300px);
     }
     50% {
         -webkit-transform: scale(2);
@@ -150,8 +147,6 @@ html, body {
         opacity: 1;
         -webkit-transform: scale(1);
                 transform: scale(1);
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
     }
 }
 @keyframes logo-animation {
@@ -159,8 +154,6 @@ html, body {
         opacity: 0;
         -webkit-transform: scale(0);
                 transform: scale(0);
-        -webkit-transform: translateX(-300px);
-                transform: translateX(-300px);
     }
     50% {
         -webkit-transform: scale(2);
@@ -170,8 +163,6 @@ html, body {
         opacity: 1;
         -webkit-transform: scale(1);
                 transform: scale(1);
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
     }
 }
 
@@ -308,7 +299,7 @@ html, body {
     padding: 3px;
     display: block;
     margin: 40px auto;
-    background-color: #fff;
+    background-color: #eee;
 }
 
 .about-info {
