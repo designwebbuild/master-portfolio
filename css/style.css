@@ -8,7 +8,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: 'Quicksand', sans-serif, monospace; */
     font-family: 'Playfair Display', serif;
     box-sizing: border-box;
 }
@@ -353,7 +352,8 @@ html, body {
     height: 250px;
     margin: 15px 15px 20px 15px;
     border-radius: 5px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background: #fff;
+    box-shadow: 3px 5px 8px 3px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .work img {
