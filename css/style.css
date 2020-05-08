@@ -429,13 +429,21 @@ html, body {
 }
 
 .form-info {
+    font-size: 1.25rem;
+    font-family: inherit;
+    color: var(--text-color);
     width: 500px;
     height: 50px;
     margin: 10px;
     padding-top: 20px;
     padding-left: 5px;
-    font-size: 1.25rem;
     border: none;
+    border-bottom: 3px solid transparent;
+    outline: none;
+}
+
+.form-info:focus {
+    border-bottom: 3px solid var(--main-color);
 }
 
 .form-message {
@@ -445,6 +453,12 @@ html, body {
     font-size: 1.25rem;
     padding: 5px;
     border: none;
+    border-bottom: 3px solid transparent;
+    outline: none;
+}
+
+.form-message:focus {
+    border-bottom: 3px solid var(--main-color);
 }
 
 .contact-btn {
