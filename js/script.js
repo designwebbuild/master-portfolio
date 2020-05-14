@@ -10,8 +10,9 @@ let aboutSection = document.getElementById('about-section');
 let workSection = document.getElementById('work-section');
 let nameSection = document.getElementById('name-section');
 let contactSection = document.getElementById('contact-section');
-let body = document.querySelector('.container');
-let work = document.querySelector('.work');
+let burgerBtn = document.getElementById('burger');
+
+
 
 // Hidden on page load
 nameSection.style.display = '';
@@ -22,7 +23,6 @@ contactSection.style.display = 'none';
 // Button to call about section
 aboutBtn.addEventListener('click', () => {
     nameSection.style.display = 'none';
-    // aboutSection.classList.add('show');
     aboutSection.style.display = '';
     workSection.style.display = 'none';
     contactSection.style.display = 'none';
@@ -31,7 +31,6 @@ aboutBtn.addEventListener('click', () => {
 // Button to call work section
 workBtn.addEventListener('click', () => {
   nameSection.style.display = 'none';
-  // workSection.classList.add('show');
   workSection.style.display = '';
   aboutSection.style.display = 'none';
   contactSection.style.display = 'none';
@@ -39,7 +38,6 @@ workBtn.addEventListener('click', () => {
 
 // Button to call home section
 homeBtn.addEventListener('click', () => {
-  // nameSection.classList.add('show');
   nameSection.style.display = '';
   workSection.style.display = 'none';
   aboutSection.style.display = 'none';
@@ -51,8 +49,51 @@ contactBtn.addEventListener('click', () => {
   nameSection.style.display = 'none';
   aboutSection.style.display = 'none';
   workSection.style.display = 'none';
-  // contactSection.classList.add('show');
   contactSection.style.display = '';
+});
+
+// Burger menu functionality
+let homeBtnBurger = document.getElementById('home-burger');
+let aboutBtnBurger = document.getElementById('about-burger');
+let workBtnBurger = document.getElementById('work-burger');
+let contactBtnBurger = document.getElementById('contact-burger');
+
+burgerBtn.addEventListener('click', () => {
+  let burgerNav = document.getElementById('burger-nav');
+  burgerNav.classList.toggle('burger-nav-show');
+  burgerBtn.classList.toggle('burger-open');
+});
+
+// Button to call about section
+aboutBtnBurger.addEventListener('click', () => {
+  nameSection.style.display = 'none';
+  aboutSection.style.display = '';
+  workSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+
+// Button to call work section
+workBtnBurger.addEventListener('click', () => {
+nameSection.style.display = 'none';
+workSection.style.display = '';
+aboutSection.style.display = 'none';
+contactSection.style.display = 'none';
+});
+
+// Button to call home section
+homeBtnBurger.addEventListener('click', () => {
+nameSection.style.display = '';
+workSection.style.display = 'none';
+aboutSection.style.display = 'none';
+contactSection.style.display = 'none';
+});
+
+// Button to call contact section
+contactBtnBurger.addEventListener('click', () => {
+nameSection.style.display = 'none';
+aboutSection.style.display = 'none';
+workSection.style.display = 'none';
+contactSection.style.display = '';
 });
 
 });

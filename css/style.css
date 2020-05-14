@@ -129,7 +129,7 @@ html, body {
     width: 400px;
     margin: 0 auto;
     opacity: 0;
-    animation: logo-animation 0.6s 1s forwards;
+    animation: logo-animation 0.6s 500ms forwards;
 }
 
 @-webkit-keyframes logo-animation {
@@ -419,6 +419,7 @@ html, body {
     width: 60%;
     height: 100%;
     margin: 100px auto;
+    padding: 50px;
 }
 
 .form {
@@ -438,6 +439,7 @@ html, body {
     padding-top: 20px;
     padding-left: 5px;
     border: none;
+    border-radius: 5px;
     border-bottom: 3px solid transparent;
     outline: none;
 }
@@ -453,6 +455,7 @@ html, body {
     font-size: 1.25rem;
     padding: 5px;
     border: none;
+    border-radius: 5px;
     border-bottom: 3px solid transparent;
     outline: none;
 }
@@ -479,4 +482,9 @@ html, body {
 .contact-btn:hover {
     top: 1px;
     background: var(--text-color);
+}
+
+
+.burger-nav {
+    display: none;
 }

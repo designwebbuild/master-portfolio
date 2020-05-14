@@ -88,6 +88,12 @@
         width: 100%;
     }
 
+    .work {
+        height: 60%;
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
     .about-text p {
         font-size: 1.5rem;
         line-height: 2.5rem;
@@ -103,7 +109,7 @@
     }
 
     .sub-title {
-        margin: 80px 0;
+        /* margin: 80px 0; */
         font-size: 2.5rem;
     }
 
@@ -124,16 +130,13 @@
 
 
 @Media only screen and (max-width: 500px) {
-    
-    .name-section {
-        margin-top: 10px;
-    }
 
     .logo-img img {
         width: 250px;
     }
 
     .sub-title {
+        padding-top: 5rem;
         font-size: 2rem;
     }
 
@@ -142,13 +145,7 @@
     }
 
     .nav {
-        padding-top: 20px;
-        width: 80%;
-    }
-
-    .nav-li a {
-        font-size: 1.12rem;
-        margin: 10px;
+        display: none;
     }
 
     .name {
@@ -198,6 +195,10 @@
         background: #fff;
     }
 
+    .work-section {
+        margin: 0;
+    }
+
     .work h5 {
         font-size: 1.4rem;
     }
@@ -225,6 +226,8 @@
         letter-spacing: 2px;
         font-size: 1.25rem;
         line-height: 2rem;
+        margin-bottom: 0;
+        padding-bottom: 40px;
     }
 
     .form-info {
@@ -243,6 +246,83 @@
         font-size: 1.25rem;
         padding: 5px;
         border: 1px solid lightgray;
+    }
+    
+    /* Burger button */
+
+    .burger {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger-btn,
+    .burger-btn::before,
+    .burger-btn::after {
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 3px;
+        background: #333;
+        transition: transform 200ms;
+    }
+
+    .burger-btn::before {
+        transform: translateY(10px);
+    }
+
+    .burger-btn::after {
+        transform: translateY(-10px);
+    }
+
+    .burger-open .burger-btn { background: transparent; }
+
+    .burger-open .burger-btn::before {
+        transform: rotate(45deg) translateY(0);
+    }
+
+    .burger-open .burger-btn::after {
+        transform: rotate(-45deg) translateY(0);
+    }
+
+    /* Burger navigation */
+
+    .burger-nav {
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        z-index: 100;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.9);
+        transform: translateX(-200px);
+        transition: transform 300ms;
+    }
+
+    .burger-nav-show {
+        transform: translateX(0);
+    }
+
+    .burger-nav-ul-list {
+        height: 100%;
+        list-style: none;
+    }
+
+    .burger-nav-li,
+    .burger-nav-li a {
+        margin-bottom: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #eee;
+        font-size: 2rem;
     }
 
 }
