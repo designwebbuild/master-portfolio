@@ -131,6 +131,10 @@
 
 @Media only screen and (max-width: 500px) {
 
+    .name-section {
+        height: 100vh;
+    }
+
     .logo-img img {
         width: 250px;
     }
@@ -254,13 +258,15 @@
         height: 80px;
         width: 80px;
         border-radius: 50%;
-        position: absolute;
-        top: 0;
-        right: 10px;
+        position: sticky;
+        top: 20px;
+        left: 75%;
+        z-index: 200;
         cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
+        background: #eee;;
     }
 
     .burger-btn,
@@ -271,7 +277,7 @@
         width: 40px;
         height: 3px;
         background: #333;
-        transition: transform 200ms;
+        transition: transform 300ms;
     }
 
     .burger-btn::before {
@@ -301,10 +307,10 @@
         height: 100%;
         width: 50%;
         z-index: 100;
-        padding: 20px;
+        padding: 25px;
         background: rgba(0, 0, 0, 0.9);
-        transform: translateX(-200px);
-        transition: transform 300ms;
+        transform: translateX(-250px);
+        transition: transform 200ms cubic-bezier(.23,.53,.19,.84);
     }
 
     .burger-nav-show {
@@ -312,7 +318,8 @@
     }
 
     .burger-nav-ul-list {
-        height: 100%;
+        position: sticky;
+        top: 20px;
         list-style: none;
     }
 
@@ -322,7 +329,7 @@
         text-decoration: none;
         text-transform: uppercase;
         color: #eee;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
 }
