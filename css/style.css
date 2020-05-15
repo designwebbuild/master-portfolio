@@ -1,8 +1,10 @@
 /* Main Colors */
 :root {
-    --main-color: #2196F3;
-    --secondary-color: #F57F17;
-    --text-color: #333;
+    /* --main-color: #2196F3; */
+    /* --secondary-color: #F57F17; */
+    --main-color: #0466c8;
+    --secondary-color: #002855;
+    --text-color: #03071e;
 }
 
 * {
@@ -14,6 +16,7 @@
 
 html, body {
     height: 100vh;
+    background: #eee;
 }
 
 
@@ -43,7 +46,7 @@ html, body {
     max-width: 100%;
     margin: 0 auto;
     min-height: 100%;
-    background-image: linear-gradient(to right bottom, #fafafa, #E0F7FA);
+    /* background-image: linear-gradient(to right bottom, #fafafa, #E0F7FA); */
 }
 
 
@@ -283,7 +286,8 @@ html, body {
 
 .links:hover::after {
     color: var(--text-color);
-    background-color: rgba(245, 127, 23, .5);
+    background-color: var(--secondary-color);
+    opacity: .5;
     height: 40%;
 }
 
@@ -347,7 +351,6 @@ html, body {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    padding: 10px;
     width: 250px;
     height: 250px;
     margin: 15px 15px 20px 15px;
@@ -367,12 +370,12 @@ html, body {
    font-size: 1.25rem;
    font-weight: 700;
    text-align: center;
-   margin-bottom: 15px;
+   margin: 15px 0;
 }
 
 .project-icons {
    text-align: center;
-   margin-top: 10px;
+   margin: 10px 0;
 }
 
 .github-btn {
@@ -383,7 +386,7 @@ html, body {
     cursor: pointer;
     margin-right: 5px;
     border: none;
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
     border-radius: 50px;
     text-transform: uppercase;
     color: #fff;

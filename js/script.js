@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', (event) => {
+
   /*
 * DOM elements
 */
@@ -94,6 +94,4 @@ nameSection.style.display = 'none';
 aboutSection.style.display = 'none';
 workSection.style.display = 'none';
 contactSection.style.display = '';
-});
-
 });
