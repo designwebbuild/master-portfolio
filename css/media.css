@@ -131,6 +131,10 @@
 
 @Media only screen and (max-width: 500px) {
 
+    .container {
+        overflow: hidden;
+    }
+
     .name-section {
         height: 100vh;
     }
