@@ -131,10 +131,6 @@
 
 @Media only screen and (max-width: 500px) {
 
-    .container {
-        overflow: hidden;
-    }
-
     .name-section {
         height: 100vh;
     }
@@ -271,13 +267,13 @@
         border-radius: 50%;
         position: sticky;
         top: 20px;
-        left: 80%;
+        left: 100%;
         z-index: 200;
         cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #eee;;
+        background: #eee;
     }
 
     .burger-btn,
