@@ -57,9 +57,9 @@ let homeBtnBurger = document.getElementById('home-burger');
 let aboutBtnBurger = document.getElementById('about-burger');
 let workBtnBurger = document.getElementById('work-burger');
 let contactBtnBurger = document.getElementById('contact-burger');
+let burgerNav = document.getElementById('burger-nav');
 
 burgerBtn.addEventListener('click', () => {
-  let burgerNav = document.getElementById('burger-nav');
   burgerNav.classList.toggle('burger-nav-show');
   burgerBtn.classList.toggle('burger-open');
 });
@@ -70,6 +70,8 @@ aboutBtnBurger.addEventListener('click', () => {
   aboutSection.style.display = '';
   workSection.style.display = 'none';
   contactSection.style.display = 'none';
+  burgerNav.classList.remove('burger-nav-show');
+  burgerBtn.classList.remove('burger-open');
 });
 
 // Button to call work section
@@ -78,6 +80,8 @@ nameSection.style.display = 'none';
 workSection.style.display = '';
 aboutSection.style.display = 'none';
 contactSection.style.display = 'none';
+burgerNav.classList.remove('burger-nav-show');
+burgerBtn.classList.remove('burger-open');
 });
 
 // Button to call home section
@@ -86,6 +90,8 @@ nameSection.style.display = '';
 workSection.style.display = 'none';
 aboutSection.style.display = 'none';
 contactSection.style.display = 'none';
+burgerNav.classList.remove('burger-nav-show');
+burgerBtn.classList.remove('burger-open');
 });
 
 // Button to call contact section
@@ -94,4 +100,6 @@ nameSection.style.display = 'none';
 aboutSection.style.display = 'none';
 workSection.style.display = 'none';
 contactSection.style.display = '';
+burgerNav.classList.remove('burger-nav-show');
+burgerBtn.classList.remove('burger-open');
 });
