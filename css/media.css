@@ -144,7 +144,7 @@
     }
 
     .sub-title {
-        padding-top: 5rem;
+        padding-top: 2em;
         font-size: 2rem;
     }
 
@@ -222,7 +222,7 @@
     }
 
     .container-contact {
-        margin: 0;
+        padding: 0;
         width: 100%;
     }
 
@@ -238,22 +238,28 @@
         padding-bottom: 40px;
     }
 
+    .fields {
+        width: 90%;
+    }
+
+    .field {
+        margin-bottom: 10px;
+    }
+
     .form-info {
         width: 100%;
         height: 40px;
-        margin: 10px;
         padding-top: 10px;
         font-size: 1.25rem;
-        border: 1px solid lightgray;
+        margin: 0;
     }
 
     .form-message {
         width: 100%;
-        margin: 10px;
         height: 200px;
         font-size: 1.25rem;
         padding: 5px;
-        border: 1px solid lightgray;
+        margin: 0;
     }
     
     /* Burger button */
