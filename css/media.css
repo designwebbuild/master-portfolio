@@ -132,7 +132,7 @@
 @Media only screen and (max-width: 500px) {
 
     .name-section {
-        height: 100vh;
+        overflow: hidden;
     }
 
     .logo-img img {
