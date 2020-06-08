@@ -130,6 +130,14 @@
 
 @Media only screen and (max-width: 500px) {
 
+    .container {
+        border: 10px solid;
+        border-top-color: var(--secondary-color);
+        border-left-color: var(--secondary-color);
+        border-bottom-color: var(--main-color);
+        border-right-color: var(--main-color);
+    }
+
     .name-section {
         overflow: hidden;
         height: 100vh;
@@ -140,7 +148,7 @@
     }
 
     .sub-title {
-        padding-top: 2em;
+        margin: 3em;
         font-size: 2rem;
     }
 
@@ -186,6 +194,10 @@
 
     .about-par a {
         font-size: 1.25rem;
+    }
+
+    .container-technologies {
+        margin-top: 50px;
     }
 
     .container-work {
@@ -243,6 +255,7 @@
     .technologies-list ul li img {
         height: 100px;
         width: 100px;
+        margin: 10px;
     }
 
     .fields {
