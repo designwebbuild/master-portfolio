@@ -64,6 +64,7 @@ burgerBtn.addEventListener('click', () => {
   burgerBtn.classList.toggle('burger-open');
 });
 
+
 // Button to call about section
 aboutBtnBurger.addEventListener('click', () => {
   nameSection.style.display = 'none';
@@ -102,4 +103,30 @@ workSection.style.display = 'none';
 contactSection.style.display = '';
 burgerNav.classList.remove('burger-nav-show');
 burgerBtn.classList.remove('burger-open');
+});
+
+
+// Dark mode functionality
+const modeSwitchBtn = document.querySelector('.fas');
+
+// Set current theme to the new one
+
+
+function darkModeToggle() {
+  // Get the current selected theme, it should be 'light'
+  let currentTheme = document.documentElement.getAttribute('data-theme');
+
+  // Switch between 'dark' and 'light'
+  let switchToTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  let switchLogo = currentTheme === 'dark' ? 'img/logo-black.svg' : 'img/logo-white.svg';
+
+  document.documentElement.setAttribute('data-theme', switchToTheme);
+  document.querySelector('.logo-img img').setAttribute('src', switchLogo);
+}
+
+modeSwitchBtn.addEventListener('click', () => {
+  modeSwitchBtn.classList.toggle('fa-sun');
+
+  darkModeToggle();
+  
 });
