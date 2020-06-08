@@ -138,11 +138,11 @@
     }
 }
 
-
 @Media only screen and (max-width: 500px) {
 
     .name-section {
         overflow: hidden;
+        height: 100vh;
     }
 
     .logo-img img {
@@ -184,10 +184,6 @@
         margin-bottom: 20px;
     }
 
-    .container-about {
-        margin: 0;
-    }
-
     .container-about img {
         width: 150px;
     }
@@ -201,16 +197,6 @@
     .about-par a {
         font-size: 1.25rem;
     }
-
-    /* .container-technologies {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .technologies-list ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    } */
 
     .container-work {
         width: 100%;
@@ -245,6 +231,7 @@
         margin: 0;
         padding: 0;
         width: 100%;
+        height: 100vh;
     }
 
     .about-info {
@@ -336,8 +323,8 @@
         display: block;
         position: absolute;
         left: 0;
-        height: 100%;
         width: 50%;
+        height: 100%;
         z-index: 100;
         padding: 25px;
         background: rgba(0, 0, 0, 0.9);

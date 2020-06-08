@@ -55,7 +55,8 @@ html, body {
     position: relative;
     max-width: 100%;
     margin: 0 auto;
-    min-height: auto;
+    min-height: 100%;
+    overflow: hidden;
 }
 
 
@@ -267,12 +268,7 @@ html, body {
 * Section (About)
 */
 
-.about-section {
-    height: 100%;
-}
-
 .container-about {
-    height: auto;
     margin: 5% 25% 0 25%;
     animation: fadeInDown 300ms;
 }
@@ -384,7 +380,6 @@ html, body {
 
 .container-technologies {
     margin-top: 200px;
-    height: 30%;
 }
 
 .technologies-list ul {
