@@ -107,7 +107,7 @@ burgerBtn.classList.remove('burger-open');
 
 
 // Dark mode functionality
-const modeSwitchBtn = document.querySelector('.fas');
+const modeSwitchBtn = document.querySelector('.mode-btn');
 
 // Set current theme to the new one
 
@@ -125,7 +125,8 @@ function darkModeToggle() {
 }
 
 modeSwitchBtn.addEventListener('click', () => {
-  modeSwitchBtn.classList.toggle('fa-sun');
+  const moonIcon = document.querySelector('.fa-moon');
+  moonIcon.classList.toggle('fa-sun');
 
   darkModeToggle();
   

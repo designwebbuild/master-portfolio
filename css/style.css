@@ -8,7 +8,6 @@
 
 [data-theme="light"] {
     --bg-color: hsl(0, 0%, 100%);
-    --text-color: var(--text-color);
 }
 
 [data-theme="dark"] {
@@ -29,7 +28,6 @@ html, body {
     height: 100vh;
     background-color: var(--bg-color);
 }
-
 
 /* All h4 sub-titles */
 .sub-title {
@@ -608,16 +606,18 @@ html, body {
 
 .mode-btn {
     position: absolute;
-    right: 45px;
-    top: 100px;
+    right: 25px;
+    top: 80px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .fa-sun {
-    color: var(--main-color);
+    color: var(--text-color);
 }
 
 .fas {
     font-size: 1.3rem;
     align-self: center;
-    cursor: pointer;
 }

@@ -236,6 +236,10 @@
         padding-bottom: 40px;
     }
 
+    .resume-link {
+        margin-top: 20px;
+    }
+
     .technologies-list ul li img {
         height: 100px;
         width: 100px;
@@ -280,7 +284,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #eee;
     }
 
     .burger-btn,
@@ -290,7 +293,7 @@
         content: "";
         width: 40px;
         height: 3px;
-        background: #333;
+        background-color: var(--text-color);
         transition: transform 300ms;
     }
 
@@ -325,6 +328,11 @@
         background: rgba(0, 0, 0, 0.9);
         transform: translateX(-250px);
         transition: transform 200ms cubic-bezier(.23,.53,.19,.84);
+        border: 2px solid;
+        border-top-color: var(--secondary-color);
+        border-left-color: var(--secondary-color);
+        border-bottom-color: var(--main-color);
+        border-right-color: var(--main-color);
     }
 
     .burger-nav-show {
