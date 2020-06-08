@@ -126,16 +126,6 @@
     .illustration-img {
         width: 300px;
     }
-
-    .container-technologies {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .technologies-list ul {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
 
 @Media only screen and (max-width: 500px) {
@@ -244,6 +234,11 @@
         line-height: 2rem;
         margin-bottom: 0;
         padding-bottom: 40px;
+    }
+
+    .technologies-list ul li img {
+        height: 100px;
+        width: 100px;
     }
 
     .fields {
