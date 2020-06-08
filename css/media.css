@@ -55,6 +55,15 @@
 }
 
 @Media only screen and (max-width: 900px) {
+
+    .container {
+        border: 10px solid;
+        border-top-color: var(--secondary-color);
+        border-left-color: var(--secondary-color);
+        border-bottom-color: var(--main-color);
+        border-right-color: var(--main-color);
+    }
+    
     .nav-li a {
         font-size: 1.5rem;
         margin: 15px 15px;
@@ -102,6 +111,7 @@
 
     .about-par {
         padding: 10px;
+        width: 95%;
     }
 
     .about-par a {
@@ -129,14 +139,6 @@
 }
 
 @Media only screen and (max-width: 500px) {
-
-    .container {
-        border: 10px solid;
-        border-top-color: var(--secondary-color);
-        border-left-color: var(--secondary-color);
-        border-bottom-color: var(--main-color);
-        border-right-color: var(--main-color);
-    }
 
     .name-section {
         overflow: hidden;
@@ -187,6 +189,7 @@
     }
 
     .about-text p {
+        width: 95%;
         letter-spacing: 2px;
         font-size: 1.25rem;
         line-height: 2rem;
@@ -194,10 +197,6 @@
 
     .about-par a {
         font-size: 1.25rem;
-    }
-
-    .container-technologies {
-        margin-top: 50px;
     }
 
     .container-work {
@@ -252,9 +251,13 @@
         margin-top: 20px;
     }
 
+    .container-technologies {
+        margin-top: 50px;
+    }
+
     .technologies-list ul li img {
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
         margin: 10px;
     }
 
