@@ -126,6 +126,16 @@
     .illustration-img {
         width: 300px;
     }
+
+    .container-technologies {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .technologies-list ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 
@@ -191,6 +201,16 @@
     .about-par a {
         font-size: 1.25rem;
     }
+
+    /* .container-technologies {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .technologies-list ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    } */
 
     .container-work {
         width: 100%;
