@@ -22,7 +22,7 @@
     padding: 0;
     font-family: 'Playfair Display', 'Titillium Web', serif;
     box-sizing: border-box;
-    /* outline: .10rem solid hsl(0, 0%, 0%, .3); */
+    outline: .10rem solid hsl(0, 0%, 0%, .3);
 }
 
 html, body {
@@ -55,7 +55,7 @@ html, body {
     position: relative;
     max-width: 100%;
     margin: 0 auto;
-    min-height: 100%;
+    min-height: auto;
 }
 
 
@@ -200,6 +200,7 @@ html, body {
     font-weight: 900;
     margin-bottom: 30px;
     color: var(--main-color);
+    text-shadow: 5px 10px 0 var(--shadow);
     animation: name-animation 0.6s ease-in-out;
 }
 
@@ -232,6 +233,7 @@ html, body {
     text-transform: uppercase;
     color: var(--secondary-color);
     opacity: 0;
+    text-shadow: 5px 10px 0 var(--shadow);
     animation: title-animation 0.6s 0.5s forwards;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -265,8 +267,12 @@ html, body {
 * Section (About)
 */
 
-.container-about {
+.about-section {
     height: 100%;
+}
+
+.container-about {
+    height: auto;
     margin: 5% 25% 0 25%;
     animation: fadeInDown 300ms;
 }
@@ -378,7 +384,7 @@ html, body {
 
 .container-technologies {
     margin-top: 200px;
-    height: 400px;
+    height: 30%;
 }
 
 .technologies-list ul {
@@ -504,7 +510,6 @@ html, body {
 
 .container-contact {
     width: 60%;
-    height: 100%;
     margin: 100px auto;
     padding: 50px;
 }
