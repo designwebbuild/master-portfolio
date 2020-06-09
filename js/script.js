@@ -116,18 +116,17 @@ function darkModeToggle() {
   // Get the current selected theme, it should be 'light'
   let currentTheme = document.documentElement.getAttribute('data-theme');
 
+  const moonIcon = document.querySelector('.fa-moon');
+
   // Switch between 'dark' and 'light'
   let switchToTheme = currentTheme === 'dark' ? 'light' : 'dark';
   let switchLogo = currentTheme === 'dark' ? 'img/logo-black.svg' : 'img/logo-white.svg';
 
   document.documentElement.setAttribute('data-theme', switchToTheme);
   document.querySelector('.logo-img img').setAttribute('src', switchLogo);
+  moonIcon.classList.toggle('fa-sun');
 }
 
 modeSwitchBtn.addEventListener('click', () => {
-  const moonIcon = document.querySelector('.fa-moon');
-  moonIcon.classList.toggle('fa-sun');
-
   darkModeToggle();
-  
 });

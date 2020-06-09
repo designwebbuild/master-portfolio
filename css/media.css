@@ -346,15 +346,11 @@
         width: 50%;
         height: 100%;
         z-index: 100;
-        padding: 25px;
+        padding: 10px;
         background: rgba(0, 0, 0, 0.9);
         transform: translateX(-250px);
         transition: transform 200ms cubic-bezier(.23,.53,.19,.84);
-        border: 2px solid;
-        border-top-color: var(--secondary-color);
-        border-left-color: var(--secondary-color);
-        border-bottom-color: var(--main-color);
-        border-right-color: var(--main-color);
+        border-right: 2px solid var(--main-color);
     }
 
     .burger-nav-show {
@@ -362,8 +358,8 @@
     }
 
     .burger-nav-ul-list {
-        position: sticky;
-        top: 20px;
+        position: relative;
+        top: 40px;
         list-style: none;
     }
 
@@ -373,6 +369,6 @@
         text-decoration: none;
         text-transform: uppercase;
         color: #eee;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }

@@ -599,11 +599,11 @@ html, body {
 
 .mode-btn {
     position: absolute;
-    right: 30px;
+    right: 29px;
     top: 80px;
     padding: 15px;
     cursor: pointer;
-    border-radius: 50%;
+    z-index: 100;
 }
 
 .fa-sun {
@@ -611,6 +611,6 @@ html, body {
 }
 
 .fas {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     align-self: center;
 }
