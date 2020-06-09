@@ -111,7 +111,6 @@
 
     .about-par {
         padding: 10px;
-        width: 95%;
     }
 
     .about-par a {
@@ -171,7 +170,7 @@
     .title {
         text-align: center;
         font-size: 2rem;
-        overflow-wrap: break-word;
+        overflow-wrap: break-word;s
     }
 
     .social-icons {
@@ -184,12 +183,19 @@
         margin-bottom: 20px;
     }
 
+    .container-about {
+        width: 100%;
+    }
+
     .container-about img {
         width: 150px;
     }
 
+    .about-par {
+        width: 100%;
+    }
+
     .about-text p {
-        width: 95%;
         letter-spacing: 2px;
         font-size: 1.25rem;
         line-height: 2rem;
