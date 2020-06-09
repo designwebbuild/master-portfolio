@@ -149,7 +149,7 @@
     }
 
     .sub-title {
-        margin: 3em;
+        margin: 3em 0;
         font-size: 2rem;
     }
 
@@ -170,7 +170,7 @@
     .title {
         text-align: center;
         font-size: 2rem;
-        overflow-wrap: break-word;s
+        overflow-wrap: break-word;
     }
 
     .social-icons {
