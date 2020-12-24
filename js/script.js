@@ -116,7 +116,7 @@ function darkModeToggle() {
   // Get the current selected theme, it should be 'light'
   let currentTheme = document.documentElement.getAttribute('data-theme');
 
-  const moonIcon = document.querySelector('.fa-moon');
+  const sunIcon = document.querySelector('.fa-sun');
 
   // Switch between 'dark' and 'light'
   let switchToTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -124,7 +124,9 @@ function darkModeToggle() {
 
   document.documentElement.setAttribute('data-theme', switchToTheme);
   document.querySelector('.logo-img img').setAttribute('src', switchLogo);
-  moonIcon.classList.toggle('fa-sun');
+  sunIcon.classList.toggle('fa-moon');
+
+
 }
 
 modeSwitchBtn.addEventListener('click', () => {

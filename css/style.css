@@ -1,7 +1,5 @@
 /* Main Colors */
 :root {
-    /* --main-color: hsl(350, 80%, 60%); */
-    /* --secondary-color: hsl(10, 80%, 60%); */
     --main-color: hsl(45, 100%, 54%);
     --secondary-color: hsl(13, 100%, 65%);
     --text-color: hsl(231, 82%, 6%);
@@ -56,7 +54,7 @@ html, body {
     margin: 0 auto;
     min-height: 100%;
     overflow: hidden;
-    border: 20px solid;
+    border: 10px solid;
     border-top-color: var(--secondary-color);
     border-left-color: var(--secondary-color);
     border-bottom-color: var(--main-color);
@@ -120,7 +118,6 @@ html, body {
 
 .social-icons {
     width: 350px;
-    border-bottom: 2px solid var(--secondary-color);
 }
 
 .social-icons-ul {
@@ -586,6 +583,10 @@ html, body {
 }
 
 .fa-sun {
+    color: white;
+}
+
+.fa-moon {
     color: var(--text-color);
 }
 
